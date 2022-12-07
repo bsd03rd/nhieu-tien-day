@@ -65,7 +65,8 @@ public class RegisterController extends HttpServlet {
                 response.sendRedirect("login");
             }
 
-            doGet(request, response);
+//            doGet(request, response);
+request.getRequestDispatcher("Register.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
         }

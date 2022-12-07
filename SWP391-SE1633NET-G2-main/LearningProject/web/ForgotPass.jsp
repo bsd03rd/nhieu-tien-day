@@ -31,7 +31,7 @@
                     <span style="color: red">${status}</span>
                     <input type="submit" class="btn btn-info w-100 mb-4" style="font-size: 14px; color: white; font-weight: 500; background-color: #7f55da; border: #7f55da;" value="Reset Password">                   
                 </form>
-                <a href="login" class="text-center" style="color:rgba(0, 0, 0, 0.5); font-size: 14px; font-weight: 500;"><i class="fa-solid fa-arrow-left me-2"></i>Back to log in</a>
+                <a href="/LearningProject/login" class="text-center" style="color:rgba(0, 0, 0, 0.5); font-size: 14px; font-weight: 500;"><i class="fa-solid fa-arrow-left me-2"></i>Back to log in</a>
             </div>
         </div>
 

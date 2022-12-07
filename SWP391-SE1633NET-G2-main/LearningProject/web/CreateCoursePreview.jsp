@@ -254,7 +254,7 @@
                                     <div class="course-details-price my-2">${course.getCoursePrice()}</div> 
                                 </c:if>
                                   
-                                <a class="enroll-button my-1" href="mentordashboard">Save</a>
+                                <a class="enroll-button my-1" href="AdminManageCourse">Save</a>
                                 <div class="course-details-description">
                                     <div class="description">
                                         <i class="fa-solid fa-signal"></i>
