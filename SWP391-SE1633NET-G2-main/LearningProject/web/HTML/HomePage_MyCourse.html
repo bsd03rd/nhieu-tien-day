@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elearning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="HomePage.html"><img src="assets/img/Logo-FPT.webp" alt=""></a>
+                    <div class="header-title">
+                        Học Lập Trình FPT
+                    </div>
+                </div>
+                <div class="header-search">
+                    <div class="icon-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm khóa học, bài viết, video...">
+                </div>
+                <div class="header-profile">
+                    <div class="header-mycourse">
+                        Khóa học của tôi
+                    </div>
+                    <div class="header-notification" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="notification-cotainer" onclick="event.stopPropagation()">
+                            <div class="notification-header">
+                                <h3>Thông báo</h3>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="notification-list ">
+                                <div class="notification">
+                                    <div class="noti-icon">
+                                        <img src="assets/img/f8-logo.png" alt="">
+                                    </div>
+                                    <div class="noti-content">
+                                        <p>Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8. Hãy luôn đam mê,
+                                            kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
+                                        <div class="noti-time">
+                                            một tháng trước
+                                        </div>
+                                    </div>
+                                    <div class="noti-remind">
+                                    </div>
+                                </div>
+                                <div class="notification">
+                                    <div class="noti-icon">
+                                        <img src="assets/img/f8-logo.png" alt="">
+                                    </div>
+                                    <div class="noti-content">
+                                        <p>Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8. Hãy luôn đam mê,
+                                            kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
+                                        <div class="noti-time">
+                                            một tháng trước
+                                        </div>
+                                    </div>
+                                    <div class="noti-remind">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar" onclick="event.stopPropagation()">
+                        <img src="assets/img/user.png" alt="">
+                        <div class="account-menu">
+                            <div class="menu-content">
+                                <div class="menu-element">
+                                    <i class="fa-solid fa-user"></i>
+                                    <a href="" class="menu-title">Trang cá nhân</a>
+                                </div>
+                                <div class="menu-element">
+                                    <i class="fa-solid fa-list"></i>
+                                    <a href="" class="menu-title">Khóa học của tôi</a>
+                                </div>
+                                <div class="menu-element">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <a href="" class="menu-title">Cài đặt</a>
+                                </div>
+                                <div class="line">
+
+                                </div>
+                                <div class="menu-element">
+                                    Account Balance:
+                                    <a href="" class="menu-title">200.000đ</a>
+                                </div>
+                                <div class="menu-element menu-logout">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <a href="" class="menu-title">Đăng xuất</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content" style="display: flex;">
+            <!-- Begin: Side Bar -->
+            <div id="side-bar">
+                <a class="bar-button " href="HomePage.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="button-title">Home</p>
+                </a>
+                <a class="bar-button button-hover" href="HomePage_MyCourse.html">
+                    <i class="fa-solid fa-road"></i>
+                    <p class="button-title">My Course</p>
+                </a>
+                <a class="bar-button">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p class="button-title">Blog</p>
+                </a>
+            </div>
+            <!-- End: Side Bar -->
+
+            <!-- Begin: Section My Course -->
+            <section class="section-my-course" style="display: block; flex: 1;">
+                <div class=".container-fluid">
+                    <div class="row pb-3">
+                        <h3 class="fw-bolder">My Course</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                            <div class="card my-course">
+                                <img src="assets/img/htmlcss.avif" alt="" class="card-img-top" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title">HTML CSS</h3>
+                                    <div class="course-meta-info">
+                                        <div class="course-meta-author">
+                                            <div class="author-avatar">
+                                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <p>By <a href="#" class="author-name">Lynda</a></p>
+                                        </div>
+                                        <div class="course-meta-student">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>51 Students</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                            <div class="card my-course">
+                                <img src="assets/img/htmlcss.avif" alt="" class="card-img-top" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title">HTML CSS</h3>
+                                    <div class="course-meta-info">
+                                        <div class="course-meta-author">
+                                            <div class="author-avatar">
+                                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <p>By <a href="#" class="author-name">Lynda</a></p>
+                                        </div>
+                                        <div class="course-meta-student">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>51 Students</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                            <div class="card my-course">
+                                <img src="assets/img/htmlcss.avif" alt="" class="card-img-top" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title">HTML CSS</h3>
+                                    <div class="course-meta-info">
+                                        <div class="course-meta-author">
+                                            <div class="author-avatar">
+                                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <p>By <a href="#" class="author-name">Lynda</a></p>
+                                        </div>
+                                        <div class="course-meta-student">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>51 Students</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                            <div class="card my-course">
+                                <img src="assets/img/htmlcss.avif" alt="" class="card-img-top" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title">HTML CSS</h3>
+                                    <div class="course-meta-info">
+                                        <div class="course-meta-author">
+                                            <div class="author-avatar">
+                                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <p>By <a href="#" class="author-name">Lynda</a></p>
+                                        </div>
+                                        <div class="course-meta-student">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>51 Students</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                            <div class="card my-course">
+                                <img src="assets/img/htmlcss.avif" alt="" class="card-img-top" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title">HTML CSS</h3>
+                                    <div class="course-meta-info">
+                                        <div class="course-meta-author">
+                                            <div class="author-avatar">
+                                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <p>By <a href="#" class="author-name">Lynda</a></p>
+                                        </div>
+                                        <div class="course-meta-student">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>51 Students</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: Section My Course -->
+        </div>
+
+
+        <!-- Begin: Footer -->
+        <footer style="margin-left: 100px;">
+            <footer class="new_footer_area bg_color">
+                <div class="new_footer_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 text-center">
+                                <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">About us</h3>
+                                    <p>We are group 2, class SE1633-NET. This is our project in subject SWP391. This
+                                        project is guided by
+                                        lecturer Pham Duc Thang. This is an online learning platform through video
+                                        lectures. We hope this
+                                        platform will help you learn better in programming, moreover in soft skills.
+                                        Thank you!</p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-center">
+                                <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                                    style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Contact us</h3>
+                                    <ul class="list-unstyled f_list">
+                                        <li>
+                                            <a href="#"><i class="lnr lnr-phone-handset"></i> +84 988 561
+                                                896</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="lnr lnr-envelope"></i>
+                                                hieunvhe163104@fpt.edu.vn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer_bg">
+                        <div class="footer_bg_one"></div>
+                        <div class="footer_bg_two"></div>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+        <!-- End: Footer -->
+    </div>
+    <script src="https://kit.fontawesome.com/7562df3d9f.js" crossorigin="anonymous"></script>
+    <script src="assets/js/home_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

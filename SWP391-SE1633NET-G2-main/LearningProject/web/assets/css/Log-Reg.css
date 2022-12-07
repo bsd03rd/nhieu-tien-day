@@ -1,0 +1,52 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 12, 2022, 1:45:22 PM
+    Author     : vuman
+*/
+
+.body{
+    background-color: #E3E7EB;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+}
+
+.body .card-body{
+    margin-left: 40px;
+}
+
+.body .form-outline, .body .btn{
+    width: 70%;
+}
+
+.move:hover{
+    text-decoration: underline;
+}
+
+.home{
+    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.home:hover{
+    color: gray;
+    font-size: 35px;
+}
+
+.back{
+    position: absolute;
+}
+
+

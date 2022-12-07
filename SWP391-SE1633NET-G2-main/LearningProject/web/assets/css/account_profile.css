@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #f4f6fa;
+}
+
+section {
+    margin-top: 66px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+.modal-body .avatar-preview{
+    width: 200px;
+    height: 200px;
+    border: 1px #59c3f3 dashed;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.account-profile-container {
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    width: 100%;
+}
+
+.account-profile-menu {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 6px;
+    margin-right: 48px;
+    max-height: 300px;
+}
+
+.account-profile-menu .menu-header,
+.account-profile-menu .menu-list {
+    padding: 0 0;
+}
+
+.account-profile-menu .menu-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px #ebeef3 solid;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 30px;
+}
+
+.menu-list .menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+
+.menu-list .menu i {
+    padding: 10px;
+    background-color: #cf81f3;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.menu-list .menu a {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.menu-list .menu-logout {
+    color: #fff !important;
+    background-color: #f37820 !important;
+}
+
+.menu-list .menu-course {
+    color: #fff !important;
+    background-color: #59c3f3 !important;
+}
+
+.menu-list .menu-security {
+    color: #fff !important;
+    background-color: #21bb9b !important;
+}
+
+.menu-list .menu-active {
+    background-color: #f9fbfc !important;
+    border-left: 1px solid #3fa4f2 !important;
+}
+
+.account-profile-content {
+    flex: 1;
+    display: none;
+}
+
+/* Profile Information */
+.content-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.content-container .content-header {
+    padding: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px #ebeef3 solid;
+}
+
+.account-content .account-avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e9edf1;
+    border-radius: 4px;
+}
+
+.account-content {
+    padding: 16px;
+}
+
+.account-avatar-container {
+    /* padding: 16px; */
+}
+
+.account-content .user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.account-content .user-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-avatar .user-action {
+
+}
+
+.user-avatar .user-action p {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0;
+}
+
+.user-avatar .user-action button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4eaff6;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.account-avatar .account-type {
+    padding: 8px 12px;
+    border: 1px solid #4eaff6;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(78, 175, 246, 0.1);
+    color: #4eaff6;
+    font-weight: 500;
+}
+
+.account-avatar .account-type:hover {
+    color: white;
+    background-color: #4eaff6;
+}
+
+.account-information-section {
+
+}
+
+.account-information-section h6 {
+    font-weight: 600;
+}
+
+.account-information-section label {
+    font-size: 15px;
+    color: #7c8491;
+}
+
+/* Course Progress CSS */
+.course-meta-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.course-meta-info .course-meta-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-meta-author p {
+    font-size: 14px;
+    color: #77838F;
+}
+
+.course-meta-author .author-name {
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.course-meta-author .author-name:hover {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.course-meta-student {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-meta-student i {
+    margin-right: 8px;
+    color: #77838F;
+}
+
+.course-meta-student p {
+    font-size: 14px;
+}
+
+.active {
+    display: block !important;
+}

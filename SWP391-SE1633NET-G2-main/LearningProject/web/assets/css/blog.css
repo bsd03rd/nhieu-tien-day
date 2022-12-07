@@ -1,0 +1,10 @@
+#blog {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 66px);
+    margin-top: 66px;
+    margin-left: 100px;
+}
+
+.col-3 a:hover {
+    background-color: bisque;
+}

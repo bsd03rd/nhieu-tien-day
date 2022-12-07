@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color:#1a1a1a;
+}
+
+a:hover {
+    color: unset;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+select {
+    font-family: 'FontAwesome', 'sans-serif';
+  }
+
+#main {
+    overflow: hidden;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    height: calc(100vh - 66px);
+    margin-top: 66px;
+}
+
+/* Course watch left content */
+.course-watch-left {
+    flex: 3;
+}
+
+.course-watch-left-content {
+    height: 100%;
+}
+
+.lesson-video {
+    width: 100%;
+    height: 80%;
+}
+
+.lesson-information {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.lesson-description {
+
+}
+
+.lesson-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.lesson-date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lesson-comment {
+    background-color: var(--bs-orange);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+/* Course watch right content */
+.course-watch-right {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.02);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.course-content-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.course-lesson-container {
+    cursor: pointer;
+}
+
+.course-lesson-list {
+
+}
+
+.course-lesson {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+}
+
+.course-lesson-left-title {
+    font-weight: 600;
+}
+
+.course-lesson-left-description {
+    font-size: 13px;
+}
+
+.course-lesson-child {
+    font-size: 14px;   
+}
+
+.course-lesson-child:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.course-lesson-child + .course-lesson-child {
+    margin-top: 14px;
+}
+
+.course-lesson-child i {
+    color: green;
+}
+
+.course-lesson-child-footer {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.course-lesson-child-footer i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Course Comment */
+
+.course-comment-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.course-comment-close {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.course-comment {
+    width: 46%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    padding: 30px 28px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.course-comment-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.course-comment-title span {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.course-post-comment-container {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.course-comment-postcomment {
+    margin-bottom: 16px;
+}
+
+.course-comment-postcomment textarea {
+    width: 90%; 
+    resize: none; 
+    height: 28px;
+    border: none;
+    outline: none;
+    overflow-y: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.course-postcomment-action {
+    margin-bottom: 30px;
+}
+
+.course-postcomment-action .post-cancel{
+    color: rgba(0, 0, 0, 0.2);
+    padding: 4px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.course-postcomment-action .post-cancel:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.submit-comment {
+    padding: 4px 20px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.submit-comment-active {
+    background-color: var(--bs-orange);
+}
+
+.submit-comment-active:hover {
+    opacity: 0.85;
+}
+
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+/* Comment */
+.comment {
+    width: 100%;
+}
+.comment-content {
+    
+}
+
+.comment-content .comment-user {
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.comment-content .user-name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.comment-content .user-comment-content {
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.comment-action {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 8px;
+    color: var(--bs-orange);
+}
+
+.comment-action-content {
+    cursor: pointer;
+}
+
+.dot {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Reply comment */
+.reply-comment .course-comment-postcomment {
+    margin-left: 20px;
+}
+
+
+/* Show reply comment */
+.show-reply-comment {
+    cursor: pointer;
+}
+
+.show-reply-comment h6{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h6 i {
+    margin-left: 10px;
+}
+
+

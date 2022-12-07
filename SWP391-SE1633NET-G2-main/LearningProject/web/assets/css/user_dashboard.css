@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #f4f6fa;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color:#1a1a1a;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+section {
+    display: flex;
+    margin-top: 66px;
+    height: calc(100vh - 66px);
+    overflow-y: auto;
+}
+
+/* Side bar */
+#side-bar-container {
+    background-color: white;
+    width: 100px;
+}
+
+#side-bar {
+    width: 100px;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    background-color: white;
+}
+
+#side-bar .button-hover {
+    background-color: #e8e8e8;
+}
+
+#side-bar .bar-button {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#side-bar .bar-button:hover {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+
+
+.bar-button + .bar-button {
+    margin-top: 20px;
+}
+
+#side-bar .button-title  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 6px;
+    color: #1a1a1a;
+}
+
+#side-bar i {
+    font-size: 18px;
+}
+
+/* User dashboard */
+
+.user-dashboard-container {
+    flex: 1;
+    height: calc(100vh - 66px);
+}
+
+.container-fluid {
+    background-image: linear-gradient(to right top, #fd7e14, #ff712e, #ff6641, #fd5c51, #f75560);    height: 240px;
+    border-radius: 16px;
+}
+
+/* Slide left */
+.slide-left {
+    color: #fff; 
+}
+
+.slide-left p {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.slide-left button {
+    padding: 12px 28px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+}
+
+.overview {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.overview-header h6 {
+    font-weight: 600;
+}
+
+.overview-content {
+
+}
+
+.overview-content p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.overview-content .overview-content-img {
+    font-size: 28px;
+    color: var(--bs-orange);
+}
+
+.course-meta-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.course-meta-info .course-meta-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-meta-author p {
+    font-size: 14px;
+    color: #77838F;
+}
+
+.course-meta-author .author-name {
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.course-meta-author .author-name:hover {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.course-title {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.course-meta-student {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-meta-student i {
+    margin-right: 8px;
+    color: #77838F;
+}
+
+.course-meta-student p {
+    font-size: 14px;
+}
+
+.course-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.course-footer input{
+    padding: 8px 22px;
+    background: transparent;
+    color: #F36F21;
+    border: 2px solid #F36F21;
+    border-radius: 36px;
+    font-weight: 700;
+    transition: all 0.6s ease;
+}
+
+.course-footer input:hover {
+    color: white;
+    background-color: #F36F21;
+    font-weight: 600;
+}
+
+.course-footer a{
+    padding: 8px 22px;
+    background: transparent;
+    color: #F36F21;
+    border: 2px solid #F36F21;
+    border-radius: 36px;
+    font-weight: 700;
+    transition: all 0.6s ease;
+}
+
+.course-footer a:hover {
+    color: white;
+    background-color: #F36F21;
+    font-weight: 600;
+}
+/* Slide right */
+/* .my-course {
+    background-color: #fff;
+    border-radius: 8px;
+} */

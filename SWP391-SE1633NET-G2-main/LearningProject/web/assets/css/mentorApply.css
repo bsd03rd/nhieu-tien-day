@@ -1,0 +1,398 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    height: 100vh;
+}
+
+header {
+    height: 66px;
+    border-bottom: 1px solid #e8ebed;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-content {
+    display: flex;
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .logo {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo img {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.logo .header-title {
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-search {
+    /* width: 420px;
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    padding: 0 16px 0 8px;
+    align-items: center; */
+    position: relative;
+    width: 420px;
+}
+
+.header-search input {
+    width: 420px;
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    padding: 0 16px 0 30px;
+    align-items: center;
+}
+
+.header-search .icon-search {
+    opacity: 0.7;
+    display: inline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.header-search input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.avatar>img {
+    cursor: pointer;
+}
+
+
+/* Account Menu */
+.header-profile .avatar .show-accmenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.header-profile .account-menu {
+    opacity: 0;
+    visibility: hidden;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    position: fixed;
+    right: 36px;
+    top: 65px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.menu-content {
+    padding: 10px 10px 4px 10px;
+}
+
+.menu-content .menu-element {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.menu-element+.menu-element {
+    margin-top: 6px;
+}
+
+.menu-content .menu-element:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu-content i {
+    color: #707070;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.menu-content .menu-title {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu-content .line {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    margin: 2px 0px;
+}
+
+.menu-content .menu-logout i,
+.menu-content .menu-logout .menu-title {
+    color: #e7302f;
+}
+
+/* Notification */
+.show-noti {
+    display: block !important;
+
+}
+
+.header-notification .notification-cotainer {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 42px;
+    width: 400px;
+    left: -366px;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+
+.header-notification {
+    position: relative;
+    color: #707070;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header-notification>i:hover {
+    color: black;
+}
+
+
+
+.header-notification .notification-header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.notification-header h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.notification-header i {
+    color: #757575;
+}
+
+.notification-list {
+    width: 100%;
+    padding: 16px;
+}
+
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notification:hover {
+    background-color: rgba(22, 24, 35, .05);
+}
+
+.notification+.notification {
+    margin-top: 8px;
+}
+
+.noti-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.noti-icon img {
+    width: 100% !important;
+    height: 100%;
+}
+
+
+.noti-content {
+    width: 280px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.noti-content p {
+    line-height: 18px;
+}
+
+.noti-content span {
+    color: #333;
+    font-weight: 600;
+}
+
+.noti-time {
+    margin-top: 10px;
+    color: #f05123;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.noti-remind {
+    width: 10px;
+    height: 10px;
+    background-color: #3ea6ff;
+    border-radius: 6px;
+}
+
+.header-profile .header-mycourse {
+    opacity: 0.8;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header-profile img {
+    width: 32px;
+}
+
+.overview {
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.billboard {
+    display: flex;
+    justify-content: center;
+    padding-top: 66px;
+}
+
+.billboard img {
+    width: 100%;
+    height: 100%;
+}
+
+.billboard .img-text {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.become-mentor {
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.introduction {
+    text-align: center;
+    flex-wrap: nowrap;
+    background-color: rgb(220, 220, 220);
+}
+
+.introduction h1 {
+    padding: 60px 0px;
+    margin: 0;
+}
+
+.introduction div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main-reason {        
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reason {
+    text-align: center;
+    flex-direction: column;
+    padding: 0px 70px;
+    padding-bottom: 30px;
+}
+
+/*
+.reason{    
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 25%;
+    display: inline-block;
+    flex-direction: column;    
+    align-items: center;
+}
+*/
+.reason-img {
+    width: 100%;
+    margin: 0 auto;    
+}
+.reason-img img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: center;
+}
+
+.mentor-begin-tur{    
+    padding: 0px 200px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mentor-begin-tur h1{
+    padding-top: 30px ;
+}
+
+.begin-bar{    
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.begin-bar button{    
+    padding: 0px 50px;    
+    margin: 0px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+}
+
+.begin-bar span:hover{
+    color: #fff;
+}
+
+.bar-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-1-des{
+    flex-direction: column;
+    padding: 0px 100px;
+}
