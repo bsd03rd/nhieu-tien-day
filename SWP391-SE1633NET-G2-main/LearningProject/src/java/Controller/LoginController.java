@@ -37,6 +37,9 @@ public class LoginController extends HttpServlet {
             String password = request.getParameter("password");
 
             if (userDAO.checkLogin(username, SHA256.SHA256(password))) {
+                if(userDAO.getAllUserInformation(username).getIsDisable()==true){
+                    System.err.println("tai khoan nay dang :"+userDAO.getAllUserInformation(username).getIsDisable());
+                }
                 // save into session                
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);

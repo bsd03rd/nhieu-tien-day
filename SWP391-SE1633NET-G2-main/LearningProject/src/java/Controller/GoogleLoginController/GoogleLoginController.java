@@ -35,6 +35,9 @@ public class GoogleLoginController extends HttpServlet {
             GoogleUser ggUser = GoogleUtils.getUserInfo(accessToken);            
             UserDAO userDAO = new UserDAO();
             if (userDAO.isAccountExist(ggUser.getId())) {
+                 if(userDAO.getAllUserInformation((ggUser.getId())).getIsDisable()==true){
+                     request.getRequestDispatcher("Login.jsp").forward(request, response);
+                 }
                 HttpSession session = request.getSession();
                 session.setAttribute("username", ggUser.getId());
                 session.setAttribute("user", userDAO.getAllUserInformation(ggUser.getId()));
