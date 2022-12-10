@@ -28,7 +28,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <section class="h-100 h-custom" style="background-color: #d2c9ff;">
+        <section class="h-100 h-custom" style="background-color: black;">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12">
@@ -248,7 +248,7 @@
                                                 %>
                                                 <div style="color:red;font-size: 24px;"><%=notice2%></div>
                                                 <form id="Pay_Cart" action="Pay_Cart" method="POST"></form>
-                                                <button type="submit" name="paybtn" value="paybtn" form="Pay_Cart" class="btn_pay btn btn-dark btn-block btn-lg"
+                                                <button type="submit" name="paybtn" value="paybtn" form="Pay_Cart" class="btn_pay btn btn- btn-lg btn-success"
                                                         data-mdb-ripple-color="dark">Register</button>
 
                                         </div>

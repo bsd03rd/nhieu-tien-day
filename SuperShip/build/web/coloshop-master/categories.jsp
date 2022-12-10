@@ -4,6 +4,10 @@
     Author     : BachDuc
 --%>
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="model.Acount_cloud"%>
 <%@page import="model.Category_product_Cloud"%>
 <%@page import="context.libDao"%>
 <%@page import="model.City_Address_model"%>
@@ -82,8 +86,8 @@
                                                 <i class="fa fa-angle-down"></i>
                                             </a>
                                             <ul class="account_selection">
-                                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                                <li><a href="Login"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                                                <li><a href="Register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -101,21 +105,21 @@
                             <div class="col-lg-12 text-right">
                                 <div class="logo_container">
                                     <a style="display: flex;" class="navbar-brand" href="Home">
-                            <!-- Logo icon -->
-                            <b class="logo-icon">
-                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                <!-- Dark Logo icon -->
-                                <!--<img src="assets/images/bee.png" alt="homepage" class="dark-logo" />-->
-                                <!-- Light Logo icon -->
-                                <img style="width: 50px;height: 50px;" src="assets/images/bee.png" alt="homepage" class="light-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                            <!-- Logo text -->
-                            <span class="logo-text">
-                                <!-- dark Logo text -->
-                                <h3 style="position: relative;top:14px;left: 12px;">Bee Music</h3>
-                            </span>
-                        </a>
+                                        <!-- Logo icon -->
+                                        <b class="logo-icon">
+                                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                            <!-- Dark Logo icon -->
+                                            <!--<img src="assets/images/bee.png" alt="homepage" class="dark-logo" />-->
+                                            <!-- Light Logo icon -->
+                                            <img style="width: 50px;height: 50px;" src="assets/images/bee.png" alt="homepage" class="light-logo" />
+                                        </b>
+                                        <!--End Logo icon -->
+                                        <!-- Logo text -->
+                                        <span class="logo-text">
+                                            <!-- dark Logo text -->
+                                            <h3 style="position: relative;top:14px;left: 12px;">Bee Music</h3>
+                                        </span>
+                                    </a>
                                 </div>
                                 <nav class="navbar">
                                     <ul class="navbar_menu">
@@ -123,12 +127,26 @@
                                         <li><a href="Proflie">Profile</a></li>
                                     </ul>
                                     <ul class="navbar_user">
-                                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                        <li><a href="Proflie"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                                         <li class="checkout">
-                                            <a href="#">
+                                            <a href="Cart">
                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                <span id="checkout_items" class="checkout_items">2</span>
+                                                <%
+                                                    int numItem = 0;
+                                                    Acount_cloud acc = (Acount_cloud) request.getSession().getAttribute("ac");
+                                                    Connection conn = null;
+                                                    conn = new DAO().Connect();
+                                                    PreparedStatement pr = null;
+                                                    ResultSet rs = null;
+                                                    pr = conn.prepareStatement("select * from Cart where gmail_Account like ?");
+                                                    pr.setString(1, acc.getGmail_Account());
+                                                    rs = pr.executeQuery();
+                                                    while (rs.next()) {
+                                                        numItem++;
+                                                    }
+
+                                                %>
+                                                <span id="checkout_items" class="checkout_items"><%=numItem%></span>
                                             </a>
                                         </li>
                                     </ul>
@@ -181,8 +199,8 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="menu_selection">
-                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                <li><a href="Login"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                                <li><a href="Register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
                             </ul>
                         </li>
                         <li class="menu_item"><a href="#">home</a></li>
@@ -217,17 +235,18 @@
                                 </div>
                                 <ul class="sidebar_categories">
                                     <li><input hidden="" form="search" id="selectcate" onclick="document.getElementById('search').submit();"  name="cate" value="<%=request.getAttribute("cate")%>"></li>
-                                    <li><input form="none" id="allcate" onclick="document.getElementById('selectcate').value='';document.getElementById('search').submit();" readonly="" class=" btn btn-cyan btn-light btn-success" name="cate" value="All Categories" ></li>
-                                    <%
-                                        ArrayList<Category_product_Cloud> list = (ArrayList<Category_product_Cloud>)new libDao().GetListCategory();
+                                    <li><input form="none" id="allcate" onclick="document.getElementById('selectcate').value = '';document.getElementById('search').submit();" readonly="" class=" btn btn-cyan btn-light btn-success" name="cate" value="All Categories" ></li>
+                                        <%
+                                            ArrayList<Category_product_Cloud> list = (ArrayList<Category_product_Cloud>) new libDao().GetListCategory();
                                         %>
                                         <%
-                                        for (int i = 0; i < list.size(); i++) {
-                                                
-                                           
+                                            for (int i = 0; i < list.size(); i++) {
+
+
                                         %>
-                                        <li><input form="none" id="<%=list.get(i).getId_categories() %>" onclick="document.getElementById('selectcate').value=<%=list.get(i).getId_categories() %>;document.getElementById('search').submit();" readonly="" class=" btn btn-cyan btn-light btn-success" name="cate" value="<%=list.get(i).getCategoryName()%>" ></li>
-                                    
+                                    <li><input form="none" id="<%=list.get(i).getId_categories()%>" onclick="document.getElementById('selectcate').value =<%=list.get(i).getId_categories()%>;
+                                            document.getElementById('search').submit();" readonly="" class=" btn btn-cyan btn-light btn-success" name="cate" value="<%=list.get(i).getCategoryName()%>" ></li>
+
                                     <%}%>
                                 </ul>
                             </div>
@@ -265,10 +284,10 @@
                             </div>
 
                             <!-- Sizes -->
-                           
+
 
                             <!-- Color -->
-                            
+
 
                         </div>
 
@@ -555,16 +574,19 @@
                                             <div class="product-item men">
                                                 <div class="product discount product_filter">
                                                     <div class="product_image">
-                                                        <img style="max-height: 218px;" src="<%=url%>" alt="">
+                                                        <!--<img style="max-height: 218px;" src="<%=url%>" alt="">-->
+                                                        <a  href="Single_Product?idpd=<%=dflist.get(i).getId_product()%>"><img style="max-height: 218px;" src="<%=url%>" alt=""></a>
                                                     </div>
                                                     <div class="favorite favorite_left"></div>
                                                     <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
                                                     <div class="product_info">
-                                                        <h6 class="product_name"><a href="single.html"><%=dflist.get(i).getName_product()%></a></h6>
+                                                        <!--<h6 class="product_name"><a href="single.html"><%=dflist.get(i).getName_product()%></a></h6>-->
+                                                        <h6 class="product_name"><a " href="Single_Product?idpd=<%=dflist.get(i).getId_product()%>" ><%=dflist.get(i).getName_product()%></a></h6>
                                                         <div class="product_price"><%=dflist.get(i).getValue_product_perunit()%></div>
                                                     </div>
                                                 </div>
-                                                <div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+                                                <div class="red_button add_to_cart_button"><a href="Add_Cart_Cookies?crpage=categories&amp;idpd=<%=dflist.get(i).getId_product()%>">add to cart</a></div>
+
                                             </div>
                                             <%}%>
                                         </div>

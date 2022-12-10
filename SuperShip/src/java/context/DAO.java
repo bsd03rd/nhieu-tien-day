@@ -41,19 +41,20 @@ import model.Ship_info;
 public class DAO {
 
     public Connection Connect() throws ClassNotFoundException {
-        Connection connection;
-        try {
-            //Change the username password and url to connect your own database
-            String username = "sa";
-            String password = "123";
-            String url = "jdbc:sqlserver://DESKTOP-T2PMA24:1433;databaseName=ShopeBee";
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection = DriverManager.getConnection(url, username, password);
-            return connection;
-        } catch (SQLException ex) {
-            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
-        }
+//        Connection connection;
+//        try {
+//            //Change the username password and url to connect your own database
+//            String username = "sa";
+//            String password = "123";
+//            String url = "jdbc:sqlserver://DESKTOP-T2PMA24:1433;databaseName=ShopeBee";
+//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//            connection = DriverManager.getConnection(url, username, password);
+//            return connection;
+//        } catch (SQLException ex) {
+//            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
+//            return null;
+//        }
+            return  new CommonDAO().CommonDAO();
     }
 
     public Acount_cloud Login_Account_Cloud(String gmail, String pass) throws SQLException, ClassNotFoundException {

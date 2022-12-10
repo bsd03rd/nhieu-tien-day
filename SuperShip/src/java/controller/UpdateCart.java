@@ -45,10 +45,14 @@ public class UpdateCart extends HttpServlet {
             response.sendRedirect("Login");
             return;
         }
-        if (request.getParameter("updatecartbtn").equals("Update Cart")) {
+        
+        
+        try {
+            if (request.getParameter("updatecartbtn").equals("Update Cart")) {
             String[] IDPD = request.getParameterValues("IDPD");
             String[] IDPD_value = request.getParameterValues("IDPD_value");
-
+            
+          
             //Check oveload amount product
             for (int i = 0; i < IDPD.length; i++) {
                 if (Integer.parseInt(IDPD_value[i]) > Integer.parseInt(new libDao().Get_Product(IDPD[i], "").getAmount_product())) {
@@ -109,6 +113,10 @@ public class UpdateCart extends HttpServlet {
 //                }
 //            }
         }
+        } catch (Exception e) {
+        }
+        
+        
         response.sendRedirect("Cart");
     }
 

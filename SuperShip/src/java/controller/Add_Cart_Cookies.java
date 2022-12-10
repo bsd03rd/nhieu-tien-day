@@ -94,6 +94,7 @@ public class Add_Cart_Cookies extends HttpServlet {
         pr.setString(3, ac.getGmail_Account());
         pr.executeUpdate();
         }
+        System.err.println("Current page:"+request.getParameter("crpage"));
         response.sendRedirect(request.getParameter("crpage"));
         
 

@@ -127,18 +127,21 @@
                                             <a href="Cart">
                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                 <%
-                                                    Cookie[] cookies = request.getCookies();
-                                                    int numItem = 0;
-                                                    if (cookies != null) {
-                                                        for (Cookie i : cookies) {
-                                                            if (i.getName().contains("ProductCart_") && !new libDao().Get_Product(i.getValue(), "").getGmail_Account().equals(((Acount_cloud) request.getSession().getAttribute("ac")).getGmail_Account())) {
-                                                                numItem += 1;
-                                                            }
-                                                        }
+                                                    int numItem2 = 0;
+                                                    Acount_cloud acc2 = (Acount_cloud) request.getSession().getAttribute("ac");
+                                                    Connection conn2 = null;
+                                                    conn2 = new DAO().Connect();
+                                                    PreparedStatement pr2 = null;
+                                                    ResultSet rs2 = null;
+                                                    pr2 = conn2.prepareStatement("select * from Cart where gmail_Account like ?");
+                                                    pr2.setString(1, acc2.getGmail_Account());
+                                                    rs2 = pr2.executeQuery();
+                                                    while (rs2.next()) {
+                                                        numItem2++;
                                                     }
 
                                                 %>
-                                                <span id="checkout_items" class="checkout_items"><%=numItem%></span>
+                                                <span id="checkout_items" class="checkout_items"><%=numItem2%></span>
                                             </a>
                                         </li>
                                     </ul>
@@ -261,12 +264,12 @@
                                 %>
                                 <div class="user_review_container d-flex flex-column flex-sm-row">
                                             <div class="user">
-                                                <span style="font-size: 24px;"> Shop:</span>
+<!--                                                <span style="font-size: 24px;"> Shop:</span>
                                                
                                                 <div class="user_pic" style="display: inline-block;width: 20px;height: 20px;background-image:url(<%=urlpr%>)"></div>
                                                 <div class="user_rating" style="display: inline-block;">
                                                     <a href="Shop_Profile?gmail=<%=iconShop.getGmail_Account()%>" target="target"><div style="font-size: 24px;color: black;"><%=iconShop.getGmail_Account()%></div></a>  
-                                                </div>
+                                                </div>-->
                                             </div>
                                            
                                         </div>
@@ -286,20 +289,20 @@
                                 <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
                             </ul>
                             <div class="product_color">
-                                <span>Select Color:</span>
+<!--                                <span>Select Color:</span>
                                 <ul>
                                     <li style="background: #e54e5d"></li>
                                     <li style="background: #252525"></li>
                                     <li style="background: #60b3f3"></li>
-                                </ul>
+                                </ul>-->
                             </div>
                             <div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
-                                <span>Quantity:</span>
+<!--                                <span>Quantity:</span>
                                 <div class="quantity_selector">
                                     <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
                                     <span id="quantity_value">1</span>
                                     <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                </div>
+                                </div>-->
                                 <div class="red_button add_to_cart_button"><a href="Add_Cart_Cookies?idpd=<%=pd.getId_product()%>&crpage=Single_Product?idpd=<%=pd.getId_product()%>">add to cart</a></div>
                                 <div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
                             </div>
@@ -317,11 +320,6 @@
                     <div class="row">
                         <div class="col">
                             <div class="tabs_container">
-                                <ul class="tabs d-flex flex-sm-row flex-column align-items-left align-items-md-center justify-content-center">
-                                    <li class="tab active" data-active-tab="tab_1"><span>Description</span></li>
-                                    <li class="tab" data-active-tab="tab_2"><span>Additional Information</span></li>
-                                    <li class="tab" data-active-tab="tab_3"><span>Reviews</span></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -331,65 +329,29 @@
                             <!-- Tab Description -->
 
                             <div id="tab_1" class="tab_container active">
-                                <div class="row">
-                                    <div class="col-lg-5 desc_col">
-                                        <div class="tab_title">
-                                            <h4>Description</h4>
-                                        </div>
-                                        <div class="tab_text_block">
-                                            <h2>Pocket cotton sweatshirt</h2>
-                                            <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-                                        </div>
-                                        <div class="tab_image">
-                                            <img src="coloshop-master/images/desc_1.jpg" alt="">
-                                        </div>
-                                        <div class="tab_text_block">
-                                            <h2>Pocket cotton sweatshirt</h2>
-                                            <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 offset-lg-2 desc_col">
-                                        <div class="tab_image">
-                                            <img src="coloshop-master/images/desc_2.jpg" alt="">
-                                        </div>
-                                        <div class="tab_text_block">
-                                            <h2>Pocket cotton sweatshirt</h2>
-                                            <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-                                        </div>
-                                        <div class="tab_image desc_last">
-                                            <img src="coloshop-master/images/desc_3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tab Additional Info -->
-
-                            <div id="tab_2" class="tab_container">
-                                <div class="row">
-                                    <div class="col additional_info_col">
-                                        <div class="tab_title additional_info_title">
-                                            <h4>Additional Information</h4>
-                                        </div>
-                                        <p>COLOR:<span>Gold, Red</span></p>
-                                        <p>SIZE:<span>L,M,XL</span></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tab Reviews -->
-
-                            <div id="tab_3" class="tab_container">
-                                <div class="row">
+                              <div class="row">
 
                                     <!-- User Reviews -->
 
                                     <div class="col-lg-6 reviews_col">
+                                         <%
+                                            Connection con1 = new DAO().Connect();
+                                            PreparedStatement pr1 = null;
+                                            ResultSet rs1 = null;
+                                            String sql1 = "";
+                                            sql1 = "select id_product,Account_info.gmail_Account,img,comment,date,grade from commentItems join Account_info on Account_info.gmail_Account=commentItems.gmail_Account where id_product like '" + request.getParameter("idpd") + "'";
+                                            pr1 = con1.prepareStatement(sql1);
+                                            rs1 = pr1.executeQuery();
+                                            int count=0;
+                                            while (rs1.next()) {
+                                            count++;
+                                             }
+                                                
+                                        %>
+                                        
                                         <div class="tab_title reviews_title">
-                                            <h4>Reviews (2)</h4>
+                                            <h4>Reviews (<%=count%>)</h4>
                                         </div>
-
-                                        <!-- User Review -->
                                         <%
                                             Connection con = new DAO().Connect();
                                             PreparedStatement pr = null;
@@ -401,7 +363,12 @@
                                             while (rs.next()) {
                                                 String encodedString = Base64.getEncoder().encodeToString(rs.getBytes(3));
                                                 url = "data:image/png;base64," + encodedString;
+                                                
                                         %>
+                                        
+                                        
+                                        <!-- User Review -->
+                                        
                                         <div class="user_review_container d-flex flex-column flex-sm-row">
                                             <div class="user">
                                                 <div class="user_pic" style=";width: 20px;height: 20px;background-image:url(<%=url%>)"></div>
@@ -454,6 +421,13 @@
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- Tab Additional Info -->
+                            <!-- Tab Reviews -->
+
+                            <div id="tab_3" class="tab_container">
+                                
 
                             </div>
                         </div>
