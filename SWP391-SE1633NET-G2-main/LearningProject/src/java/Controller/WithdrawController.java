@@ -19,7 +19,6 @@ import java.util.Date;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class WithdrawController extends HttpServlet {
 

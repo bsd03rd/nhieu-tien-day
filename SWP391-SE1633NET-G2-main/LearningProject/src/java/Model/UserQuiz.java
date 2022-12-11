@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author vuman
  */
 public class UserQuiz {
     private int userQuizId;

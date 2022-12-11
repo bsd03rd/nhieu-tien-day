@@ -16,7 +16,6 @@ import javax.net.ssl.HttpsURLConnection;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class VerifyCaptcha {
 

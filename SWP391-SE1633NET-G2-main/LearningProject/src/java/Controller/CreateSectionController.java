@@ -19,7 +19,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dung
  */
 public class CreateSectionController extends HttpServlet {
 

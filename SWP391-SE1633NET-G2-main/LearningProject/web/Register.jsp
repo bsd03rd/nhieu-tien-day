@@ -1,8 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : Sep 12, 2022, 2:16:30 PM
-    Author     : vuman
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

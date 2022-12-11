@@ -6,7 +6,6 @@ package Model;
 
 /**
  *
- * @author vuman
  */
 public class Video {
     private int videoId;

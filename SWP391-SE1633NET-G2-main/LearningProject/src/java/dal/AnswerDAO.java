@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author vuman
  */
 public class AnswerDAO extends DBContext {
 

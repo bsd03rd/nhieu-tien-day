@@ -30,7 +30,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Dung
  */
 @WebServlet(urlPatterns = {"/test"}, name = "TestController")
 public class TestController extends HttpServlet {

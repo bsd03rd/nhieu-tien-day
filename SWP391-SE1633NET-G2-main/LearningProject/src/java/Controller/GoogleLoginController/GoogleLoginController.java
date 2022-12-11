@@ -19,7 +19,6 @@ import utils.SHA256;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class GoogleLoginController extends HttpServlet {
 

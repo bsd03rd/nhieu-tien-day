@@ -7,7 +7,6 @@ package utils;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class Constants {
 //  public static String GOOGLE_CLIENT_ID = "360712733433-ptfqp15obi7kif9bh3ao7te2ia6gd1nb.apps.googleusercontent.com";

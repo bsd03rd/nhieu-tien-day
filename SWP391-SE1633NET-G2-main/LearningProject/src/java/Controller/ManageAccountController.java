@@ -18,7 +18,6 @@ import utils.SendEmail;
 
 /**
  *
- * @author Hieu Shin
  */
 public class ManageAccountController extends HttpServlet {
 

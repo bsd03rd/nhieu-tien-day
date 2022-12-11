@@ -22,7 +22,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name = "UserDashboardController", urlPatterns = {"/userdashboard"})
 public class UserDashboardController extends HttpServlet {

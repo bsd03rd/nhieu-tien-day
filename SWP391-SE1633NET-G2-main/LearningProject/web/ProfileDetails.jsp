@@ -1,7 +1,4 @@
 <%-- 
-    Document   : ProfileDetails
-    Created on : Oct 31, 2022, 2:46:44 AM
-    Author     : HieuShin
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

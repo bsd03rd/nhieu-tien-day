@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author BachDuc
  */
 public class vnpayRefund extends HttpServlet {
 

@@ -25,7 +25,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dung
  */
 public class CreateCoursePreviewController extends HttpServlet {
 

@@ -19,7 +19,6 @@ import utils.SendEmail;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name = "SendNoticeGmailController", urlPatterns = {"/sendnotice"})
 public class SendNoticeGmailController extends HttpServlet {

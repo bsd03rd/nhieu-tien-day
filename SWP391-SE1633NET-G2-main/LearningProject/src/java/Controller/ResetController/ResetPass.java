@@ -22,7 +22,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class ResetPass extends HttpServlet {
 

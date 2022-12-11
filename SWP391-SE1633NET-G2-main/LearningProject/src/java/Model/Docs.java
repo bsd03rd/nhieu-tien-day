@@ -6,7 +6,6 @@ package Model;
 
 /**
  *
- * @author vuman
  */
 public class Docs {
     private int docsId;

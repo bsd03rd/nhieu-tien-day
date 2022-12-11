@@ -6,7 +6,6 @@ package Model;
 
 /**
  *
- * @author vuman
  */
 public class Section {
     private int sectionId;

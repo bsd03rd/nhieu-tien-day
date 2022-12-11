@@ -32,7 +32,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author vuman
  */
 public class UpdateLessonController extends HttpServlet {
 

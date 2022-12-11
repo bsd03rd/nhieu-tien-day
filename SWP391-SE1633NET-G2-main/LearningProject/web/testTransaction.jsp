@@ -1,8 +1,3 @@
-<%-- 
-    Document   : testTransaction
-    Created on : Oct 9, 2022, 5:14:08 PM
-    Author     : NamDepTraiVL
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

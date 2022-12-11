@@ -32,7 +32,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author thangnh
  */
 public class vnpayQuery extends HttpServlet {
 

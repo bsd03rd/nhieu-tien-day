@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name = "LoadMoreAccount", urlPatterns = {"/loadmore"})
 public class LoadMoreAccount extends HttpServlet {

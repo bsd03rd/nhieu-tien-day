@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CreateCourse
-    Created on : Oct 1, 2022, 10:34:28 AM
-    Author     : Dung
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

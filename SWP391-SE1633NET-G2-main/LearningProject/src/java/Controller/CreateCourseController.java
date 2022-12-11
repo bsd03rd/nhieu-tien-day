@@ -25,7 +25,6 @@ import javax.mail.Session;
 
 /**
  *
- * @author Dung
  */
 public class CreateCourseController extends HttpServlet {
    

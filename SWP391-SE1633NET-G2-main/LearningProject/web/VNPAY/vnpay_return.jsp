@@ -4,7 +4,7 @@
     Document   : vnpay_return
     Created on : Sep 29, 2015, 7:23:56 PM
     Author     : xonv
-    Description: Su dung de thong bao ket qua thanh toan toi khach hang. 
+    Description: Su  de thong bao ket qua thanh toan toi khach hang. 
                  Khong thuc hien cap nhat vao db tai file nay
 --%>
 
@@ -197,7 +197,7 @@ body {
                     <label><%=request.getParameter("vnp_Amount")%></label>
                 </div>  
                 <div class="form-group">
-                    <label >Nội dung thanh toán:</label>
+                    <label >Nội  thanh toán:</label>
                     <label><%=request.getParameter("vnp_OrderInfo")%></label>
                 </div> 
                 <div class="form-group">

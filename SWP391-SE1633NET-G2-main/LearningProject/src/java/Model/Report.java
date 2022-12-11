@@ -6,7 +6,6 @@ package Model;
 
 /**
  *
- * @author ASUS
  */
 public class Report {
     private int ReportID;

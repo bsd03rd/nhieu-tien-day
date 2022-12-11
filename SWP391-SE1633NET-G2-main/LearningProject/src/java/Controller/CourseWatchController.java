@@ -36,7 +36,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dung
  */
 @WebServlet(name = "CourseWatchController", urlPatterns = {"/WatchCourse"})
 public class CourseWatchController extends HttpServlet {

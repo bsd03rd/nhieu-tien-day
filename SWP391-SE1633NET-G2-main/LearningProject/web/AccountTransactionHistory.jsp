@@ -1,7 +1,6 @@
 <%-- 
     Document   : AccountTransactionHistory
-    Created on : Oct 10, 2022, 12:49:10 PM
-    Author     : Dung
+    Author     : 
 --%>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

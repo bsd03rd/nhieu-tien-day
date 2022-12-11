@@ -1,8 +1,3 @@
-<%-- 
-    Document   : ShoppingCart
-    Created on : 05-Dec-2022, 21:19:24
-    Author     : BachDuc
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>

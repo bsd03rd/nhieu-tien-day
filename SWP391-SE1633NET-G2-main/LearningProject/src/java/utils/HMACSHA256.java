@@ -16,7 +16,6 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class HMACSHA256 {
 

@@ -8,7 +8,6 @@ import java.sql.Date;
 
 /**
  *
- * @author Hieu Shin
  */
 public class User {
 

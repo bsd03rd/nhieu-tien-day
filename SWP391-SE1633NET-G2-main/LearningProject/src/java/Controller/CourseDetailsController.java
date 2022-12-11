@@ -26,7 +26,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dung
  */
 @WebServlet(urlPatterns = {"/CourseDetails"}, name = "CourseDetailsController")
 public class CourseDetailsController extends HttpServlet {

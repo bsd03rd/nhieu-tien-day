@@ -10,7 +10,6 @@ import java.sql.Date;
 
 /**
  *
- * @author vuman
  */
 public class Validation {
     public boolean checkBirthDay(Date date1){

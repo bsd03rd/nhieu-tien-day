@@ -16,7 +16,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author BachDuc
  */
 public class ShoppingCart extends HttpServlet {
 

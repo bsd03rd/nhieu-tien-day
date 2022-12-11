@@ -15,7 +15,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author vuman
  */
 public class QuestionDAO extends DBContext {
 

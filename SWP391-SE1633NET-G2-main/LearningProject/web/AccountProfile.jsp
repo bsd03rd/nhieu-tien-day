@@ -1,7 +1,6 @@
 <%-- 
     Document   : AccountProfile
-    Created on : Sep 17, 2022, 11:02:54 AM
-    Author     : HieuShin
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

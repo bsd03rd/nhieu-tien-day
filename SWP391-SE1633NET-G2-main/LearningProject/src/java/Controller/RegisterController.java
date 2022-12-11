@@ -21,7 +21,6 @@ import utils.VerifyCaptcha;
 
 /**
  *
- * @author vuman
  */
 public class RegisterController extends HttpServlet {
 

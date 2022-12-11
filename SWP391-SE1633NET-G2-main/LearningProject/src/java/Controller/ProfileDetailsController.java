@@ -20,7 +20,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Hieu Shin
  */
 public class ProfileDetailsController extends HttpServlet {
 

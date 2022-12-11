@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class UserCourseController extends HttpServlet {
     @Override

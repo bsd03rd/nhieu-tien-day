@@ -1,7 +1,4 @@
 <%-- 
-    Document   : AccountTransactionHistory
-    Created on : Oct 10, 2022, 12:49:10 PM
-    Author     : Dung
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

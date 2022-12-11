@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CreateLesson
-    Created on : Sep 30, 2022, 2:45:45 AM
-    Author     : HieuShin
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

@@ -1,7 +1,4 @@
 <%-- 
-    Document   : login
-    Created on : Sep 12, 2022, 1:19:33 PM
-    Author     : vuman
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpSession;
 
 /**
  *
- * @author ASUS
  */
 public class UnenrollController extends HttpServlet {
  

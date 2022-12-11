@@ -18,7 +18,6 @@ import java.util.Date;
 
 /**
  *
- * @author Dung
  */
 public class testserasdfs extends HttpServlet {
 

@@ -19,7 +19,6 @@ import utils.SHA256;
 
 /**
  *
- * @author vuman
  */
 public class LoginController extends HttpServlet {
 

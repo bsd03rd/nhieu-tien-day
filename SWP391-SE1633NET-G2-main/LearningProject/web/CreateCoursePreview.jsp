@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CourseDetails
-    Created on : Sep 29, 2022, 8:32:15 PM
-    Author     : Dung
 --%>
 
 <%@page import="Model.Lesson"%>
@@ -66,7 +63,7 @@
                                         </div>
                                         <div class="noti-content">
                                             <p>
-                                                Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8.
+                                                Chào mừng <span>Le Dao Quang </span> đã gia nhập F8.
                                                 Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng
                                                 bạn nhé ❤️
                                             </p>
@@ -80,7 +77,7 @@
                                         </div>
                                         <div class="noti-content">
                                             <p>
-                                                Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8.
+                                                Chào mừng <span>Le Dao Quang </span> đã gia nhập F8.
                                                 Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng
                                                 bạn nhé ❤️
                                             </p>
@@ -160,7 +157,7 @@
 
                             <!-- Course Agenda -->
                             <div class="course-agenda">
-                                <h3 class="course-agenda-title">Nội dung khóa học</h3>
+                                <h3 class="course-agenda-title">Nội  khóa học</h3>
                                 <div class="course-agenda-description">
                                     <div class="course-agenda-left">
                                         <div class="course-chapter">

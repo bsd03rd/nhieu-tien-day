@@ -18,7 +18,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author ASUS
  */
 public class CommentDAO extends DBContext {
 

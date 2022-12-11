@@ -17,7 +17,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author vuman
  */
 public class UpdateCourseController extends HttpServlet {
 

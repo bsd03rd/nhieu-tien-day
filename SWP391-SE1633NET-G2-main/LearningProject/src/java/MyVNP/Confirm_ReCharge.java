@@ -22,8 +22,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author BachDuc
  */
 public class Confirm_ReCharge extends HttpServlet {
 

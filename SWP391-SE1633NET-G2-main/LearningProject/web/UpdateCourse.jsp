@@ -1,8 +1,3 @@
-<%-- 
-    Document   : CreateCourse
-    Created on : Oct 1, 2022, 10:34:28 AM
-    Author     : Dung
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

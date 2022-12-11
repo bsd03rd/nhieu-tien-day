@@ -8,7 +8,6 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author Hieu Shin
  */
 public class Blog {
 

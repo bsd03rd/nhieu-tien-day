@@ -14,7 +14,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Hieu Shin
  */
 public class BlogDAO extends DBContext {
 

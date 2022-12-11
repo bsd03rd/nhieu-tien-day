@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author BachDuc
  */
 public class addcart extends HttpServlet {
 

@@ -6,7 +6,6 @@ package Model;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class CurrentCourse {
 

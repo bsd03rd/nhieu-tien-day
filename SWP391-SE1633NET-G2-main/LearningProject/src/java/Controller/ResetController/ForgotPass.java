@@ -27,7 +27,6 @@ import utils.VerifyCaptcha;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class ForgotPass extends HttpServlet {
 

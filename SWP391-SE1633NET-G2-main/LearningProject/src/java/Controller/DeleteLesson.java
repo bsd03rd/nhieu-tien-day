@@ -15,7 +15,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Hieu Shin
  */
 public class DeleteLesson extends HttpServlet {
    

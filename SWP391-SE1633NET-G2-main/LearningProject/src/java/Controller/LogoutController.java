@@ -15,7 +15,6 @@ import jakarta.servlet.http.HttpSession;
 
 /**
  *
- * @author Hieu Shin
  */
 public class LogoutController extends HttpServlet {
    

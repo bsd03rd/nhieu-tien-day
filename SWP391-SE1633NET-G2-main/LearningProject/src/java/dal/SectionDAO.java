@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author vuman
  */
 public class SectionDAO extends DBContext {
 

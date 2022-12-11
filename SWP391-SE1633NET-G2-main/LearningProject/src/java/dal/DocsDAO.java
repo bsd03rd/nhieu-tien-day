@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author vuman
  */
 public class DocsDAO extends DBContext{
     public Docs getDocsOfLesson(int lessonId){

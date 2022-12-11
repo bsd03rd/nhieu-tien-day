@@ -28,7 +28,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author xonv
  */
 public class ajaxServlet extends HttpServlet {
 

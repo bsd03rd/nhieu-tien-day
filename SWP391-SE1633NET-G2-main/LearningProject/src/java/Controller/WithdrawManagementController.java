@@ -20,7 +20,6 @@ import java.util.Enumeration;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name = "WithdrawManagementController", urlPatterns = {"/withdrawmanagement"})
 public class WithdrawManagementController extends HttpServlet {

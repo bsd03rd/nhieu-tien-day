@@ -17,7 +17,6 @@ import utils.SHA256;
 
 /**
  *
- * @author vuman
  */
 public class ChangePasswordController extends HttpServlet {
     @Override

@@ -1,4 +1,3 @@
-<%-- Document : AdminManageCourse Created on : Oct 11, 2022, 10:32:22 AM Author : Dung --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>

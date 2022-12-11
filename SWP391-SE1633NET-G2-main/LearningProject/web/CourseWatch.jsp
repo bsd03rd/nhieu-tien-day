@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CourseWatch
-    Created on : Sep 30, 2022, 8:26:22 PM
-    Author     : Dung
 --%>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

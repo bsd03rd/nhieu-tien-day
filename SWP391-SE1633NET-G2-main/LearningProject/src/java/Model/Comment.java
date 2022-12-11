@@ -11,7 +11,6 @@ import java.util.Date;
 
 /**
  *
- * @author vuman
  */
 public class Comment {
     private int commentId;

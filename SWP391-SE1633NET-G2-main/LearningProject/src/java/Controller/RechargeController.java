@@ -18,7 +18,6 @@ import jakarta.servlet.http.HttpSession;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name="RechargeController", urlPatterns={"/recharge"})
 public class RechargeController extends HttpServlet {

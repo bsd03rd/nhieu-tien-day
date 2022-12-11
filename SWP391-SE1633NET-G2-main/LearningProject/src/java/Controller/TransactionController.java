@@ -32,7 +32,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Dung
  */
 @WebServlet(urlPatterns = {"/transaction"}, name = "TransactionController")
 public class TransactionController extends HttpServlet {

@@ -24,7 +24,6 @@ import utils.SendEmail;
 
 /**
  *
- * @author ASUS
  */
 public class EnrollController extends HttpServlet {
 

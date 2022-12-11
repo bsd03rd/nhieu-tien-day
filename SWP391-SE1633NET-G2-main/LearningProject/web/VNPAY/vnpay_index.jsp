@@ -48,7 +48,7 @@
                         <input class="form-control" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="amount" max="100000000" min="1" name="amount" type="number" value="10000" />
                     </div>
                     <div class="form-group">
-                        <label for="OrderDescription">Nội dung thanh toán</label>
+                        <label for="OrderDescription">Nội  thanh toán</label>
                         <textarea class="form-control" cols="20" id="vnp_OrderInfo" name="vnp_OrderInfo" rows="2">Thanh toan don hang test</textarea>
                     </div>
                     <div class="form-group">

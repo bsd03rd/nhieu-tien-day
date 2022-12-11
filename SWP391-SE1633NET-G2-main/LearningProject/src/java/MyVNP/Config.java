@@ -21,7 +21,6 @@ import jakarta.servlet.http.HttpServletRequest;
 
 /**
  *
- * @author xonv
  */
 public class Config {
 

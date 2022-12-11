@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CourseDetails
-    Created on : Sep 29, 2022, 8:32:15 PM
-    Author     : Dung
 --%>
 
 <%@page import="Model.Lesson"%>
@@ -74,7 +71,7 @@
 
                             <!-- Course Agenda -->
                             <div class="course-agenda">
-                                <h3 class="course-agenda-title">Nội dung khóa học</h3>
+                                <h3 class="course-agenda-title">Nội  khóa học</h3>
                                 <div class="course-agenda-description">
                                     <div class="course-agenda-left">
                                         <div class="course-chapter">

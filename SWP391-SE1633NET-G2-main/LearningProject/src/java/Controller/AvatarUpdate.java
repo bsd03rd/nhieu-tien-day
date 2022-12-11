@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Hieu Shin
  */
 public class AvatarUpdate extends HttpServlet {
    

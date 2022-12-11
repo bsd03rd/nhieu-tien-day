@@ -21,7 +21,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author NamDepTraiVL
  */
 @WebServlet(name = "NotificationController", urlPatterns = {"/notification"})
 public class NotificationController extends HttpServlet {

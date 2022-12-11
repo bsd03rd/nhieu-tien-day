@@ -14,7 +14,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author NamDepTraiVL
  */
 public class AccountDBContext extends DBContext {
        

@@ -19,10 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Hieu Shin
- */
+
 public class AccountProfile extends HttpServlet {
 
     /**

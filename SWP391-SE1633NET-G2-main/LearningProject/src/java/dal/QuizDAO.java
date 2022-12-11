@@ -24,7 +24,6 @@ import java.util.HashMap;
 
 /**
  *
- * @author vuman
  */
 public class QuizDAO extends DBContext {
 

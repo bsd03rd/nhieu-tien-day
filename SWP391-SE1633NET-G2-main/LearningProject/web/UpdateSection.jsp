@@ -1,8 +1,3 @@
-<%-- 
-    Document   : CreatSection
-    Created on : Oct 1, 2022, 5:03:30 PM
-    Author     : Dung
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -53,7 +48,7 @@
                                         </div>
                                         <div class="noti-content">
                                             <p>
-                                                Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8.
+                                                Chào mừng <span>Le Dao Quang </span> đã gia nhập F8.
                                                 Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng
                                                 bạn nhé ❤️
                                             </p>
@@ -67,7 +62,7 @@
                                         </div>
                                         <div class="noti-content">
                                             <p>
-                                                Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8.
+                                                Chào mừng <span>Le Dao Quang </span> đã gia nhập F8.
                                                 Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng
                                                 bạn nhé ❤️
                                             </p>

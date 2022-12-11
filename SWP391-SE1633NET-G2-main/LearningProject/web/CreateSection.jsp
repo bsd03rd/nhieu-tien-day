@@ -1,7 +1,4 @@
 <%-- 
-    Document   : CreatSection
-    Created on : Oct 1, 2022, 5:03:30 PM
-    Author     : Dung
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

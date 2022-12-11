@@ -1,7 +1,6 @@
 <%-- 
     Document   : AdminDashboard
-    Created on : Oct 9, 2022, 4:49:25 PM
-    Author     : NamDepTraiVL
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -98,7 +97,7 @@
                                 <div
                                     class="user-dashboard-slide d-flex justify-content-between align-items-center w-100">
                                     <div class="slide-left">
-                                        <h4 class="fw-bold">Hi dungssj12</h4>
+                                        <h4 class="fw-bold">Hi ssj12</h4>
                                         <p class="mb-3">Welcome to your admin dashboard</p>
                                         <button>Get Started</button>
                                     </div>

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : Oct 2, 2022, 3:03:17 PM
-    Author     : NamDepTraiVL
---%>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -54,7 +49,7 @@
                             <img src="assets/img/f8-logo.png" alt="">
                         </div>
                         <div class="noti-content">
-                            <p>Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8. Hãy luôn đam mê,
+                            <p>Chào mừng <span>Le Dao Quang </span> đã gia nhập F8. Hãy luôn đam mê,
                                 kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
                             <div class="noti-time">
                                 một tháng trước
@@ -68,7 +63,7 @@
                             <img src="assets/img/f8-logo.png" alt="">
                         </div>
                         <div class="noti-content">
-                            <p>Chào mừng <span>Le Dao Quang Dung</span> đã gia nhập F8. Hãy luôn đam mê,
+                            <p>Chào mừng <span>Le Dao Quang </span> đã gia nhập F8. Hãy luôn đam mê,
                                 kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
                             <div class="noti-time">
                                 một tháng trước

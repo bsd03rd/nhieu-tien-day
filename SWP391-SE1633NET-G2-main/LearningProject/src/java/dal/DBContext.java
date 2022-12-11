@@ -11,7 +11,6 @@ import java.sql.ResultSet;
 
 /**
  *
- * @author Hieu Shin
  */
 public class DBContext {
 

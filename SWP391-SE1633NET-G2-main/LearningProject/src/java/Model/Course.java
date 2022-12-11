@@ -11,7 +11,6 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author Hieu Shin
  */
 public class Course {
     private int CourseID;

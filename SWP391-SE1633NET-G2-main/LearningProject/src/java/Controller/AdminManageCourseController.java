@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dung
  */
 public class AdminManageCourseController extends HttpServlet {
 
