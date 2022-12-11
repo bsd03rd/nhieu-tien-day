@@ -616,6 +616,30 @@ public class DAO {
             return null;
         }
     }
+    
+    public ArrayList<Order_Product> GetALL_OrderProductTYPEBUYFORADMIN(String type)
+            throws SQLException, ClassNotFoundException {
+        Connection con = Connect();
+        PreparedStatement pr = null;
+        ResultSet rs = null;
+        ArrayList<Order_Product> list = new ArrayList<>();
+        String sql = "";
+        try {
+            sql = "select * from Order_product as od\n"
+                    + "join Ship_info as sp on od.Id_order=sp.Id_order\n"
+                    + " where ShippedDate_Ship_info=? order by orderdate_order_product DESC";
+            pr = con.prepareStatement(sql);
+            pr.setString(1, type);
+            rs = pr.executeQuery();
+            while (rs.next()) {
+                list.add(new Order_Product(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4)));
+            }
+            return list;
+        } catch (Exception e) {
+            System.err.println(e);
+            return null;
+        }
+    }
 
     public ArrayList<Order_Product> GetALL_OrderProductTYPESELL(String gmailbuy, String type)
             throws SQLException, ClassNotFoundException {

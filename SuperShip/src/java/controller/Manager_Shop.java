@@ -59,6 +59,7 @@ public class Manager_Shop extends HttpServlet {
         request.setAttribute("pedingsubmitship", new DAO().GetALL_OrderProductTYPESELL(ac.getGmail_Account(),"1"));
         request.setAttribute("pedingsubmitpay", new DAO().GetALL_OrderProductTYPESELL(ac.getGmail_Account(),"2"));
          request.setAttribute("successorder", new DAO().GetALL_OrderProductTYPESELL(ac.getGmail_Account(),"3"));
+         request.setAttribute("cancellist", new DAO().GetALL_OrderProductTYPEBUYFORADMIN("-1"));
         request.getRequestDispatcher("view/Manager_Shop.jsp").forward(request, response);
     }
 

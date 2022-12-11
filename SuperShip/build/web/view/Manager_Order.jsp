@@ -163,10 +163,16 @@
                                         %>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Product" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Manager Product</span></a></li>
                                         <%}%>
+
+                            <%
+                                if (ac.getType_account().equals("user")) {
+                            %>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Order" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Manager Order</span></a></li>
-                                        <%
-                                            if (ac.getType_account().equals("admin")) {
-                                        %>
+                                        <%}%>
+
+                            <%
+                                if (ac.getType_account().equals("admin")) {
+                            %>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Shop" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Manager Shop</span></a></li>
                                         <%}%>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Cart" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">My Cart</span></a></li>
@@ -346,8 +352,8 @@
                                                     <th scope="col">buyer</th>
                                                     <th scope="col">seller</th>
                                                     <th scope="col">date</th>
-                                                    <th> Details<th>
-                                                    <th> Pay<th>
+                                                    <th> Details</th>
+                                                    <th> Pay</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -362,10 +368,13 @@
                                                     <td><%=i.getGmail_Account_sell()%></td>
                                                     <td><%=i.getOrderdate_order_produc()%></td>
                                                     <td> <a href="GetDetailsOrder?id=<%=i.getId_order()%>" target="target">Details</a></td>
-                                                    <td> <a href="PayOrder?id=<%=i.getId_order()%>" target="target">Pay</a></td>
+                                                    <td> 
+                                                        <a  href="PayOrder?id=<%=i.getId_order()%>" target="target">Pay</a>
+                                                        <a style="color: red;" href="CancelOrder?id=<%=i.getId_order()%>" target="target">Cancel</a>
+                                                    </td>
                                                 </tr>
                                                 <%}
-                                                }%>
+                                                    }%>
                                             </tbody>
                                         </table>
 

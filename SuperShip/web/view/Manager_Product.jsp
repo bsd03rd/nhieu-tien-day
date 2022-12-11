@@ -113,7 +113,11 @@
                             <!-- User Profile-->
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Proflie" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Profile</span></a></li>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Product" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Manager Product</span></a></li>
+                             <%
+                                if (ac.getType_account().equals("user")) {
+                            %>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Order" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Manager Order</span></a></li>
+                                        <%}%>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Shop" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Manager Shop</span></a></li>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Cart" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">My Cart</span></a></li>
                             <li class="text-center p-40 upgrade-btn">

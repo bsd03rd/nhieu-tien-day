@@ -102,9 +102,9 @@
                             <!-- ============================================================== -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <div class="dropdown-menu dropdown-menu-right user-dd animated">
                                     <a class="dropdown-item" href="Proflie"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                    <a class="dropdown-item" href="VNPAY/vnpay_index.jsp"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance:<%=((Acount_cloud)request.getSession().getAttribute("ac")).getAccount_info().getBalance()%></a>
+                                    <a class="dropdown-item" href="VNPAY/vnpay_index.jsp"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance:<%=((Acount_cloud) request.getSession().getAttribute("ac")).getAccount_info().getBalance()%></a>
                                     <a class="dropdown-item" href="VNPAY/vnpay_index.jsp"><i class="ti-wallet m-r-5 m-l-5"></i> ReCharge</a>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
                                     <a class="dropdown-item" href="Logout"><i class="ti-email m-r-5 m-l-5"></i> Log out</a>
@@ -135,9 +135,9 @@
                                 <div class="user-profile d-flex no-block dropdown m-t-20">
                                     <div class="user-pic"><img src="assets/images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
                                     <div class="user-content hide-menu m-l-10">
-                                         <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <h5 class="m-b-0 user-name font-medium"><%= ((Acount_cloud)request.getSession().getAttribute("ac")).getAccount_info().getFname()+" "+((Acount_cloud)request.getSession().getAttribute("ac")).getAccount_info().getLname()%> <i class="fa fa-angle-down"></i></h5>
-                                            <span class="op-5 user-email"><%=((Acount_cloud)request.getSession().getAttribute("ac")).getAccount_info().getFname()%></span> 
+                                        <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h5 class="m-b-0 user-name font-medium"><%= ((Acount_cloud) request.getSession().getAttribute("ac")).getAccount_info().getFname() + " " + ((Acount_cloud) request.getSession().getAttribute("ac")).getAccount_info().getLname()%> <i class="fa fa-angle-down"></i></h5>
+                                            <span class="op-5 user-email"><%=((Acount_cloud) request.getSession().getAttribute("ac")).getAccount_info().getFname()%></span> 
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
                                             <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
@@ -154,9 +154,16 @@
                             </li>
                             <li class="p-15 m-t-10"><a href="javascript:void(0)" class="btn btn-block create-btn text-white no-block d-flex align-items-center"><i class="fa fa-plus-square"></i> <span class="hide-menu m-l-5">Create New</span> </a></li>
                             <!-- User Profile-->
-                           <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Proflie" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Profile</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Proflie" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Profile</span></a></li>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Product" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Manager Product</span></a></li>
+                                        <%
+                                            Acount_cloud ac = (Acount_cloud) request.getSession().getAttribute("ac");
+                                        %>
+                                        <%
+                                            if (ac.getType_account().equals("user")) {
+                                        %>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Order" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Manager Order</span></a></li>
+                                        <%}%>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Manager_Shop" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Manager Shop</span></a></li>
                             <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Cart" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">My Cart</span></a></li>
                             <li class="text-center p-40 upgrade-btn">
@@ -240,7 +247,7 @@
                                                     <td><%=i.getOrderdate_order_produc()%></td>
                                                     <td> <a href="GetDetailsOrder?id=<%=i.getId_order()%>" target="target">Details</a></td>
                                                     <td> <a href="CancelOrder?id=<%=i.getId_order()%>" target="target">Cancel Order</a></td>
-                                                   <td> <a href="SubmitOrder?id=<%=i.getId_order()%>" target="target">Submit Order</a></td>
+                                                    <td> <a href="SubmitOrder?id=<%=i.getId_order()%>" target="target">Submit Order</a></td>
                                                 </tr>
                                                 <%}
                                                     }%>
@@ -248,7 +255,7 @@
                                         </table>
 
                                     </div>
-                                             <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>Pending Submit Ship</h6>
+                                    <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>Pending Submit Ship</h6>
                                     <div class="table-responsive">
                                         <%
                                             ArrayList<Order_Product> pedingsubmitship = (ArrayList<Order_Product>) request.getAttribute("pedingsubmitship");
@@ -276,7 +283,7 @@
                                                     <td><%=i.getGmail_Account_sell()%></td>
                                                     <td><%=i.getOrderdate_order_produc()%></td>
                                                     <td> <a href="GetDetailsOrder?id=<%=i.getId_order()%>" target="target">Details</a></td>
-                                                   <td> <a href="SubmitShip?id=<%=i.getId_order()%>" target="target">Submit Ship</a></td>
+                                                    <td> <a href="SubmitShip?id=<%=i.getId_order()%>" target="target">Submit Ship</a></td>
                                                 </tr>
                                                 <%}
                                                     }%>
@@ -284,7 +291,7 @@
                                         </table>
 
                                     </div>
-                                                <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>Pending Submit Pay</h6>
+                                    <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>Pending Submit Pay</h6>
                                     <div class="table-responsive">
                                         <%
                                             ArrayList<Order_Product> pedingsubmitpay = (ArrayList<Order_Product>) request.getAttribute("pedingsubmitpay");
@@ -318,7 +325,7 @@
                                         </table>
 
                                     </div>
-                                             <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>OrderComplete</h6>
+                                    <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i>OrderComplete</h6>
                                     <div class="table-responsive">
                                         <%
                                             ArrayList<Order_Product> successorder = (ArrayList<Order_Product>) request.getAttribute("successorder");
@@ -352,7 +359,43 @@
                                         </table>
 
                                     </div>
-                                    <h6 class="card-title"><i class="m-r-5 font-18 mdi mdi-numeric-2-box-multiple-outline"></i> Table Without Outside Padding</h6>
+
+                                    <h6 class="card-title m-t-40"><i class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i> Cancel Order</h6>
+                                    <div class="table-responsive">
+                                        <%
+                                            ArrayList<Order_Product> cancellist = (ArrayList<Order_Product>) request.getAttribute("cancellist");
+
+
+                                        %>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">buyer</th>
+                                                    <th scope="col">seller</th>
+                                                    <th scope="col">date</th>
+                                                    <th> Details<th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <%                                                if (cancellist != null) {
+                                                        for (Order_Product i : cancellist) {
+
+
+                                                %>
+                                                <tr>
+                                                    <td><%=i.getId_order()%></td>
+                                                    <td><%=i.getGmail_Account_buy()%></td>
+                                                    <td><%=i.getGmail_Account_sell()%></td>
+                                                    <td><%=i.getOrderdate_order_produc()%></td>
+                                                    <td> <a href="GetDetailsOrder?id=<%=i.getId_order()%>" target="target">Details</a></td>
+                                                </tr>
+                                                <%}
+                                                    }%>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
                                 </div>
 
                                 <!-- ============================================================== -->
@@ -373,7 +416,7 @@
                             <!-- footer -->
                             <!-- ============================================================== -->
                             <footer class="footer text-center">
-                                 Assigment copyright by Group9
+                                Assigment copyright by Group9
                             </footer>
                             <!-- ============================================================== -->
                             <!-- End footer -->
