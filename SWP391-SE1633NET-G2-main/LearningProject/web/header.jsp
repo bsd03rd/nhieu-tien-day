@@ -22,15 +22,20 @@
             <div class="icon-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>            
-             <form action="${searchPath == null ? 'home' : searchPath}" method="GET">
+            <form action="${searchPath == null ? 'home' : searchPath}" method="GET">
                 <input type="text" name="searching" placeholder="Tìm kiếm khóa học, bài viết, video...">
                 <input type="submit" hidden />
             </form>
         </div>
         <div class="header-profile">
+            <%
+                if (session.getAttribute("user") != null) {
+            %>
             <a href="VNPAY/vnpay_index.jsp" class="header-mycourse" style="text-decoration: none;color: #707070;">
                 Nạp tiền vào tài khoản
             </a>
+            <%}%>
+
             <div class="header-notification" onclick="event.stopPropagation()">
                 <i class="fa-solid fa-bell" onclick="loadAll()"></i>
                 <div class="notification-cotainer" onclick="event.stopPropagation()"  style="overflow:scroll;height: 600px">
@@ -40,7 +45,7 @@
                         <i onclick="loadUnSeen()">Unseen</i>
                     </div>
                     <div class="notification-content" id="notice">
-                    
+
                     </div>
 
                     <%--
@@ -77,7 +82,9 @@
                 </div>                
             </div>
             <c:if test="${user==null}">
-                <button class="btn btn-info"><a href="login" class="text-white fw-bold">Login</a></button>
+                <a href="login">
+                    <button style="font-size: 18px;font-weight: bold;color: white;" class="btn btn-info">Login</button>
+                </a>
             </c:if>
             <c:if test="${user!=null}">
                 <div class="avatar" onclick="event.stopPropagation()">
@@ -124,7 +131,7 @@
             $.ajax({
                 url: "/LearningProject/notification",
                 type: 'GET',
-                data:'value= all',
+                data: 'value= all',
                 success: function (data) {
                     var row = document.getElementById("notice");
                     row.innerHTML = data;
@@ -134,12 +141,12 @@
                 }
             });
         }
-        
+
         function loadUnSeen() {
             $.ajax({
                 url: "/LearningProject/notification",
                 type: 'GET',
-                data:'value= unseen',
+                data: 'value= unseen',
                 success: function (data) {
                     var row = document.getElementById("notice");
                     row.innerHTML = data;

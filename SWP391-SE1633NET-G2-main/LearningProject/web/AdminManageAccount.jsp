@@ -91,7 +91,7 @@
                                                                 <input type="hidden" value="${users.getUserId()}" name="userid">
                                                                 <input type="hidden" value="${users.getIsDisable()}" name="isdisable">
                                                                 <a class="bg-success" href="profiledetails?id=${users.getUserId()}"
-                                                               style="border-radius: 32px; padding: 4px 8px; color: white; width: fit-content; font-weight: 500;">View Details</a>
+                                                                   style="border-radius: 32px; padding: 4px 8px; color: white; width: fit-content; font-weight: 500;">View Details</a>
                                                                 <button type="submit" class="bg-danger"
                                                                         style="border:none; border-radius: 32px; padding: 4px 8px; color: white; min-width: 100px; font-weight: 500;">Disable</button>
                                                             </c:if>
@@ -99,7 +99,7 @@
                                                                 <input type="hidden" value="${users.getUserId()}" name="userid">
                                                                 <input type="hidden" value="${users.getIsDisable()}" name="isdisable">
                                                                 <a class="bg-success" href="profiledetails?id=${users.getUserId()}"
-                                                               style="border-radius: 32px; padding: 4px 8px; color: white; width: fit-content; font-weight: 500;">View Details</a>
+                                                                   style="border-radius: 32px; padding: 4px 8px; color: white; width: fit-content; font-weight: 500;">View Details</a>
                                                                 <button type="submit" class="bg-success"
                                                                         style="border:none; border-radius: 32px; padding: 4px 8px; color: white; min-width: 100px; font-weight: 500;">Enable</button>
                                                             </c:if>
@@ -124,6 +124,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+        <!--script me-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/create_video_lesson.js"></script>
+        <script src="https://kit.fontawesome.com/7562df3d9f.js" crossorigin="anonymous"></script>
+        <script src="assets/js/home_page.js"></script>
+        <!--script ne-->
     </body>
 
 </html>
