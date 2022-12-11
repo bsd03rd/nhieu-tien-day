@@ -82,7 +82,7 @@ public class Register extends HttpServlet {
             //END ADD COOKIES REGISTER
 
             //Sending Code to email
-            SendMail.SendMail("bsd03rd@gmail.com", "Confirm your Email", "<!DOCTYPE html>\n"
+            SendMail.SendMail(request.getParameter("email_register"), "Confirm your Email", "<!DOCTYPE html>\n"
                     + "<html>\n"
                     + "\n"
                     + "<head>\n"

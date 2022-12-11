@@ -55,7 +55,7 @@ public class ForgetPass extends HttpServlet {
             newpass+=new RandomString().RandomStringS(1);
              newpass+=new RandomString().RandomStringN(1);
              newpass+=new RandomString().RandomString(5);
-            SendMail.SendMail("bsd03rd@gmail.com", "Confirm your Email", "<!DOCTYPE html>\n"
+            SendMail.SendMail(request.getParameter("email"), "Confirm your Email", "<!DOCTYPE html>\n"
                     + "<html>\n"
                     + "\n"
                     + "<head>\n"
