@@ -34,7 +34,7 @@
             </div>
             <h3>Tạo mới đơn hàng</h3>
             <div class="table-responsive">
-                <form action="/SuperShip/vnpayajax" id="frmCreateOrder" method="post">        
+                <form action="/LearningProject/ajaxServlet" id="frmCreateOrder" method="post">        
                     <div class="form-group">
                         <label for="language">Loại hàng hóa </label>
                         <select name="ordertype" id="ordertype" class="form-control">
