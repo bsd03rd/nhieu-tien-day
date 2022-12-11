@@ -25,7 +25,7 @@ import sun.security.x509.AlgorithmId;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Register extends HttpServlet {
 

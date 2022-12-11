@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Acount_cloud {
 

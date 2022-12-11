@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Logout extends HttpServlet {
 

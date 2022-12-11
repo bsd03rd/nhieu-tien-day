@@ -1,7 +1,7 @@
 <%-- 
     Document   : Manager_Order
-    Created on : Jul 3, 2022, 12:59:32 PM
-    Author     : BachDuc
+     12:59:32 PM
+    Author     : 
 --%>
 
 <%@page import="model.Acount_cloud"%>

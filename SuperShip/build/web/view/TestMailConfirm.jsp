@@ -1,7 +1,7 @@
 <%-- 
     Document   : TestMailConfirm
-    Created on : Jun 19, 2022, 9:47:58 AM
-    Author     : BachDuc
+     9:47:58 AM
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

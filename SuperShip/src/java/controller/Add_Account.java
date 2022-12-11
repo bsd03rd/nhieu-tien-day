@@ -30,7 +30,7 @@ import model.Register_information;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Add_Account extends HttpServlet {
 

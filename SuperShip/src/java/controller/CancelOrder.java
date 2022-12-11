@@ -26,7 +26,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class CancelOrder extends HttpServlet {
 

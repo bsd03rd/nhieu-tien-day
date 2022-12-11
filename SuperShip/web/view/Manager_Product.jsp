@@ -1,7 +1,7 @@
 <%-- 
     Document   : Manager_JSP
-    Created on : Jun 21, 2022, 9:21:43 PM
-    Author     : BachDuc
+     9:21:43 PM
+    Author     : 
 --%>
 
 <%@page import="context.DAO"%>

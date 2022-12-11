@@ -25,7 +25,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class GetDetailsOrder extends HttpServlet {
 

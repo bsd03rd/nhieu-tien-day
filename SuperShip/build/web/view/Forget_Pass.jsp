@@ -1,7 +1,7 @@
 <%-- 
     Document   : Register
-    Created on : Jun 4, 2022, 2:29:58 AM
-    Author     : BachDuc
+     2:29:58 AM
+    Author     : 
 --%>
 
 <%@page import="model.Acount_cloud"%>

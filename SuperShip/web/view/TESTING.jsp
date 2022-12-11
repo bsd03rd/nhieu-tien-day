@@ -1,7 +1,7 @@
 <%-- 
     Document   : TESTING
-    Created on : Jun 21, 2022, 3:03:50 PM
-    Author     : BachDuc
+     3:03:50 PM
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

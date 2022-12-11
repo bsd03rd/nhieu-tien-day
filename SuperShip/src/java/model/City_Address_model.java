@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class City_Address_model {
     String ID_City_Address;

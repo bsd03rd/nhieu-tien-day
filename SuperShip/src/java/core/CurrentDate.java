@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class CurrentDate {
 

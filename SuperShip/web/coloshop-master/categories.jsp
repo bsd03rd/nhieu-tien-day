@@ -1,7 +1,6 @@
 <%-- 
     Document   : categories
-    Created on : Jul 5, 2022, 9:16:40 AM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page import="java.sql.ResultSet"%>

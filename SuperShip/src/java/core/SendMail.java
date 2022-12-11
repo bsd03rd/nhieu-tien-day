@@ -10,7 +10,7 @@ import javax.mail.internet.*;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class SendMail {
     public static void SendMail(String to, String sub,

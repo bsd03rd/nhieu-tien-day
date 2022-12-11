@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Product_Cloud {
 

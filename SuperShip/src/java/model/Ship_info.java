@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Ship_info {
 String id_Ship_info ;

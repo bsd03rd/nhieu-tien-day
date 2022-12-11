@@ -1,7 +1,7 @@
 <%-- 
     Document   : ConfirmEmail
-    Created on : Jun 4, 2022, 4:45:15 AM
-    Author     : BachDuc
+     4:45:15 AM
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Inpputer {
     public static boolean InputRegex(String content,String regex){

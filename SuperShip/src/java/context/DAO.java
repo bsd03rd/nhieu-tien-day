@@ -36,7 +36,7 @@ import model.Ship_info;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class DAO {
 

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class CommonDAO {
     public Connection CommonDAO() throws ClassNotFoundException {

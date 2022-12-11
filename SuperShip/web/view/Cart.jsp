@@ -1,7 +1,6 @@
 <%-- 
     Document   : Cart
-    Created on : Jun 28, 2022, 8:41:07 PM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page import="model.Account_Address_Cloud"%>

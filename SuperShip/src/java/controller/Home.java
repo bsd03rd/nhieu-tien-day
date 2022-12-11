@@ -21,7 +21,7 @@ import model.Product_Cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Home extends HttpServlet {
 

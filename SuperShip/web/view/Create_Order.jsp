@@ -1,7 +1,6 @@
 <%-- 
     Document   : Create_Order
-    Created on : Jun 6, 2022, 4:16:49 PM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page import="java.util.Base64"%>

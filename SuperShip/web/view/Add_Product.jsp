@@ -1,7 +1,7 @@
 <%-- 
     Document   : Add_Product
-    Created on : Jun 21, 2022, 9:32:06 PM
-    Author     : BachDuc
+     9:32:06 PM
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

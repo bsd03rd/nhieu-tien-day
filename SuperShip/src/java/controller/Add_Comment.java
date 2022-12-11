@@ -18,7 +18,7 @@
 //
 ///**
 // *
-// * @author BachDuc
+// * @author 
 // */
 //public class Add_Comment extends HttpServlet {
 //

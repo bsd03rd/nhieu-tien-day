@@ -1,7 +1,6 @@
 <%-- 
     Document   : MainContent
-    Created on : Jun 12, 2022, 10:29:54 AM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

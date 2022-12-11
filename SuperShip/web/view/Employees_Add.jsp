@@ -1,7 +1,6 @@
 <%-- 
     Document   : Employees_Add
-    Created on : Jun 5, 2022, 11:09:47 AM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

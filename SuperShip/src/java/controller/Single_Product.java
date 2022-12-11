@@ -20,7 +20,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Single_Product extends HttpServlet {
 

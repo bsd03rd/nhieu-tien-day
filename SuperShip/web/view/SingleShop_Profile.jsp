@@ -1,7 +1,7 @@
 <%-- 
     Document   : SellerProfile
-    Created on : Jun 20, 2022, 10:02:01 PM
-    Author     : BachDuc
+     10:02:01 PM
+    Author     : 
 --%>
 
 <%@page import="model.Product_Cloud"%>

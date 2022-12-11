@@ -22,7 +22,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Login extends HttpServlet {
 

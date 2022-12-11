@@ -1,7 +1,7 @@
 <%-- 
     Document   : AddProcduct
-    Created on : Jun 18, 2022, 3:37:34 PM
-    Author     : BachDuc
+     3:37:34 PM
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

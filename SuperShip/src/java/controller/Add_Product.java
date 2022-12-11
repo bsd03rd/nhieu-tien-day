@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Add_Product extends HttpServlet {
 

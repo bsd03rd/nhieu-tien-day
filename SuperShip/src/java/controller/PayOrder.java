@@ -23,7 +23,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class PayOrder extends HttpServlet {
 

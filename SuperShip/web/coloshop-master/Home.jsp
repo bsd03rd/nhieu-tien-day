@@ -1,7 +1,6 @@
 <%-- 
     Document   : home
-    Created on : Jun 26, 2022, 5:58:36 PM
-    Author     : BachDuc
+    Author     : 
 --%>
 
 <%@page import="java.util.Comparator"%>

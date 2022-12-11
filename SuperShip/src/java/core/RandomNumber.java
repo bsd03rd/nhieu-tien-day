@@ -6,7 +6,7 @@ package core;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class RandomNumber {
 

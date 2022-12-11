@@ -14,7 +14,7 @@ import java.util.Arrays;
  */
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class SHA_256 {
     public static String MySHA256(String PassWord) throws NoSuchAlgorithmException {

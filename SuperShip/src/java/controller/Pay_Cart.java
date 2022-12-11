@@ -24,7 +24,7 @@ import model.Acount_cloud;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Pay_Cart extends HttpServlet {
 

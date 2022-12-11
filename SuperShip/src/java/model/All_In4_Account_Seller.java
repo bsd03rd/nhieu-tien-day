@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class All_In4_Account_Seller {
 String id_account ;

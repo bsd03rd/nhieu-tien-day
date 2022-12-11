@@ -10,7 +10,7 @@ import model.Register_information;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class Generate_ID_Account {
     

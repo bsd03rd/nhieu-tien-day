@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class ConfirmEmail extends HttpServlet {
 

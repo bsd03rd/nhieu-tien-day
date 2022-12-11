@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author BachDuc
+ * @author 
  */
 public class RandomString {
 
