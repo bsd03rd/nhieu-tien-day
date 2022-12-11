@@ -8,9 +8,9 @@
 <header>
     <div class="header-content">
         <div class="logo">
-            <a href="home"><img src="assets/img/Logo-FPT.webp" alt=""></a>
+            <a href="home"><img src="https://img.freepik.com/free-vector/music-school-logo-template-entertainment-business-branding-design-vector_53876-140616.jpg?w=360" alt=""></a>
             <div class="header-title">
-                Học Lập Trình FPT
+                Music Course FPT
             </div>
         </div>
         <div class="header-search">
