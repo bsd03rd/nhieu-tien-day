@@ -98,7 +98,7 @@ public class PaymentDAO extends DBContext {
         return paymentList;
     }
 
-    public void userRecharge(int userid, Date date, int amount, int status, String method, String content) {
+    public void userRecharge(int userid, Date date, double amount, int status, String method, String content) {
         int hehe = 0;
         hehe = executeUpdate("INSERT INTO [dbo].[Recharge]\n"
                 + "           ([UserID]\n"
